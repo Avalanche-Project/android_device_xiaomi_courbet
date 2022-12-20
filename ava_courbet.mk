@@ -11,14 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common Awaken stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+# Inherit some common Avalanche stuff.
+$(call inherit-product, vendor/avalanche/config/common_full_phone.mk)
 
-PRODUCT_NAME := awaken_courbet
+PRODUCT_NAME := ava_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Avalanche Stuff
+AVALANCHE_MAINTAINER := willtanoe
+AVALANCHE_BUILDTYPE := OFFICIAL
 
 # Blur
 TARGET_USES_BLUR := true
